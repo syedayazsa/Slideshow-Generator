@@ -66,7 +66,7 @@ def labels(data):
 
 
 def music_gen(prediction):
-  music_path = "/content/audio/{0}/".format(prediction[0])+random.choice(os.listdir("/content/audio/{0}".format(prediction[0])))
+  music_path = "audio/{0}/".format(prediction[0])+random.choice(os.listdir("audio/{0}".format(prediction[0])))
   return music_path
 
 

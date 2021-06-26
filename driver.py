@@ -94,7 +94,7 @@ counter = int((time_video*fps)/100)
 # Below VideoWriter object will create
 # a frame of above defined The output 
 # is stored in 'filename.mp4' file.
-video_path = 'prod.mp4'
+video_path = 'result/prod.mp4'
 result = cv2.VideoWriter(video_path, 
                          cv2.VideoWriter_fourcc(*'MP4V'),
                          fps, size)
@@ -219,7 +219,7 @@ else:
 videoclip = VideoFileClip(video_path)
 new_audioclip = CompositeAudioClip([audio])
 videoclip.audio = new_audioclip
-videoclip.write_videofile("finalproduct.mp4")
+videoclip.write_videofile("result/finalproduct.mp4")
 
 
 
