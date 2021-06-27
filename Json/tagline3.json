@@ -2,23 +2,23 @@
     "data" : [
       {
         "keyword": "translate",
-        "startTime": "00:00",
-        "endTime": "00:04",
+        "startTime": 0,
+        "endTime": 4,
         "displayText": "Translate - end your silence",
         "tagLine": "Translate - end your silence"
           
       },
       {
         "keyword": "end silence",
-        "startTime": "00:05",
-        "endTime": "00:08",
+        "startTime": 5,
+        "endTime": 8,
         "displayText": "Translate - end your silence",
         "tagLine": "Translate - end your silence"
       },
       {
         "keyword": "rejoice",
-        "startTime": "00:09",
-        "endTime": "00:10",
+        "startTime": 9,
+        "endTime": 10,
         "displayText": "Translate - end your silence",
         "tagLine": "Translate - end your silence"
       }

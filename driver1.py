@@ -2,8 +2,12 @@
 # Importing Libraries
 #--------------------------------------
 
-
-
+import numpy as np
+import math
+from PIL import Image, ImageDraw,ImageFont,ImageFilter
+import cv2
+import json 
+from tqdm import tqdm
 import cv2
 import numpy as np
 import glob
@@ -51,9 +55,9 @@ for i in range(len(data['data'])):
 
 print('Downloading Images.....')
 print('--------------------------------------')
-font = ImageFont.truetype("/Users/ayaz/Desktop/Misc/times-ro.ttf", 188)
+#font = ImageFont.truetype("/Users/ayaz/Desktop/Misc/times-ro.ttf", 188)
 
-os.chdir("/Users/ayaz/Desktop/Misc/pics")
+os.chdir("/content/Slideshow-Generator/pics")
 from pexelsPy import API
 PEXELS_API = "563492ad6f91700001000001f71c408e552945e58a9c8a4a68bc5333"
 api = API(PEXELS_API)
@@ -70,10 +74,10 @@ for keyword in keywords:
         file.write(response.content)
         
         #Editing the Image
-        img = Image.open(fname)
-        draw = ImageDraw.Draw(img)
-        draw.text((900, 900),keyword,(237, 21, 21),font=font, fontsize = 188)
-        img.save(fname)
+        #img = Image.open(fname)
+        #draw = ImageDraw.Draw(img)
+        #draw.text((900, 900),keyword,(237, 21, 21),font=font, fontsize = 188)
+        #img.save(fname)
         
 file.close()
 
@@ -94,7 +98,7 @@ counter = int((time_video*fps)/100)
 # Below VideoWriter object will create
 # a frame of above defined The output 
 # is stored in 'filename.mp4' file.
-video_path = 'result/prod.mp4'
+video_path = '/content/Slideshow-Generator/result/prod.mp4'
 result = cv2.VideoWriter(video_path, 
                          cv2.VideoWriter_fourcc(*'MP4V'),
                          fps, size)
@@ -108,7 +112,7 @@ result = cv2.VideoWriter(video_path,
 
 print('Creating & Launching Slideshow.....')
 print('--------------------------------------')
-os.chdir("/Users/ayaz/Desktop/Misc")
+os.chdir("/content/Slideshow-Generator")
 class Image:
     def __init__(self, filename, time=500, size=500):
         self.size = size
@@ -195,36 +199,6 @@ def process():
 
 
 process()
-
-#--------------------------------------
-# Selecting music
-#--------------------------------------
-
-predictions = mp.labels(description)
-music_path = mp.music_gen(predictions)
-
-#--------------------------------------
-# Mixing audio and Video
-#--------------------------------------
-
-audio_file = AudioFileClip(music_path)
-
-if int(audio_file.duration) < time_video:
-  audio = afx.audio_loop( audio_file, duration=time_video)
-elif int(audio_file.duration)>time_video:
-  audio = audio_file.subclip(0,time_video)
-else:
-  audio = audio_file
-
-videoclip = VideoFileClip(video_path)
-new_audioclip = CompositeAudioClip([audio])
-videoclip.audio = new_audioclip
-videoclip.write_videofile("result/finalproduct.mp4")
-
-
-
-
-
 
 
 

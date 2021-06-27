@@ -2,16 +2,16 @@
     "data" : [
       {
         "keyword": "break",
-        "startTime": "00:00",
-        "endTime": "00:04",
+        "startTime": 0,
+        "endTime": 4,
         "displayText": "Language barrier?",
         "tagLine": "Break the barrier"
           
       },
       {
-        "keyword": ["break barrier", "end silence", "language barrier"],
-        "startTime": "00:05",
-        "endTime": "00:08",
+        "keyword": "language barrier",
+        "startTime": 5,
+        "endTime": 8,
         "displayText": "Let's help you break the barrier...",
         "tagLine": "Break the barrier"
       }

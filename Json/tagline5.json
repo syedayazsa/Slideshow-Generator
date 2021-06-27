@@ -2,45 +2,45 @@
     "data" : [
       {
         "keyword": "words",
-        "startTime": "00:00",
-        "endTime": "00:02",
+        "startTime": 0,
+        "endTime": 2,
         "displayText": "Words",
         "tagLine": "Words travel world. Translation does the driving"
           
       },
       {
         "keyword": "travel",
-        "startTime": "00:02",
-        "endTime": "00:04",
+        "startTime": 3,
+        "endTime": 4,
         "displayText": "travel",
         "tagLine": "Words travel world. Translation does the driving"
       },
       {
         "keyword": "world",
-        "startTime": "00:04",
-        "endTime": "00:05",
+        "startTime": 4,
+        "endTime": 5,
         "displayText": "world...",
         "tagLine": "Words travel world. Translation does the driving"
       },
       {
         "keyword": "words",
-        "startTime": "00:05",
-        "endTime": "00:06",
+        "startTime": 5,
+        "endTime": 6,
         "displayText": "Translation does the",
         "tagLine": "Words travel world. Translation does the driving"
           
       },
       {
         "keyword": "driving",
-        "startTime": "00:06",
-        "endTime": "00:07",
+        "startTime": 6,
+        "endTime": 7,
         "displayText": "driving",
         "tagLine": "Words travel world. Translation does the driving"
       },
       {
         "keyword": "cats",
-        "startTime": "00:07",
-        "endTime": "00:08",
+        "startTime": 7,
+        "endTime": 8,
         "displayText": "driving",
         "tagLine": "Words travel world. Translation does the driving"
       }

@@ -2,16 +2,16 @@
     "data" : [
       {
         "keyword": "life",
-        "startTime": "00:00",
-        "endTime": "00:04",
+        "startTime": 0,
+        "endTime": 4,
         "displayText": "Adding life",
         "tagLine": "Adding life through translation"
           
       },
       {
         "keyword": "translation",
-        "startTime": "00:05",
-        "endTime": "00:09",
+        "startTime": 5,
+        "endTime": 9,
         "displayText": "through translation",
         "tagLine": "Adding life through translation"
       }
