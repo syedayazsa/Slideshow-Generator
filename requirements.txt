@@ -1,0 +1,4 @@
+pexelsPy
+moviepy
+textblob
+spacy
